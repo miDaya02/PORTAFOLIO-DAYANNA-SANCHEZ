@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #191c32;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #224;
+    color: #fff;
+}
+
+.brand {
+    margin-right: 20px;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 100vw;
+    background-color: #191c32;
+    color: #fff;
+    padding: 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.menu li a:hover {
+    color: #66E7C8;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu li a:hover {
+    background-color: aqua;
+    color: #191c32;
+}
+
+.inicio {
+    width: 100%;
+    max-width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2em;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: 3em;
+}
+
+.inicio img {
+    border: 7px solid aqua;
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+    grid-column: 1;
+    z-index: 1;
+}
+
+.info-content span {
+    color: aqua;
+}
+
+.quien_soy {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    gap: 2em;
+}
+
+.quien_soy img {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+}
+
+.quien_soy-info {
+    padding: 4rem;
+    text-align: center;
+}
+
+.quien_soy-info h1 {
+    font-size: 2em;
+    color: #191c32;
+}
+
+.divisor {
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin: 5px auto 2em;
+}
+
+.quien_soy-info p {
+    font-size: 1.2em;
+    text-align: justify;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .inicio {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: left;
+    }
+
+    .inicio h1 {
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .inicio img {
+        grid-column: 2;
+    }
+
+    .quien_soy {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2em;
+    }
+
+    .quien_soy img {
+        grid-column: 1;
+    }
+
+    .quien_soy-info {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .proyecto {
+        background-color: #224;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+    }
+
+    .proyecto-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portafolio-title {
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .proyecto-python,
+    .proyecto-html {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .proyecto-python img,
+    .proyecto-html img {
+        width: 25%; 
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .proyecto-info :hover {
+        cursor: pointer;
+        transform: scale(1.2); 
+    }
+    .proyecto-info h3 {
+        font-size: 1.8rem;
+        color: #66E7C8;
+        margin-top: 20px;
+    }
+
+    .proyecto-info p {
+        font-size: 1.2rem;
+        color: #ccc;
+    }
+
+    .proyecto-info a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .proyecto-info img {
+        width: 25%; 
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+}
+
+.contacto {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    color: #66E7C8;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #66E7C8;
+    border-radius: 5px;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #66E7C8;
+    color: #191c32;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4db0a2;
+}

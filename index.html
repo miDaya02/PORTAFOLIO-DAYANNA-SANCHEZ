@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>D<span>S</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="#"  class="active">Inicio</a></li>
+                    <li><a href="#sobre_mi">Sobre mi</a></li>
+                    <li><a href="#Portafolio">Portafolio</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="inicio">          
+            <div class="info-content">
+                <h1> Soy <br> <span>Dayanna</span> Sánchez</h1> 
+            </div>
+            <img src="1719079281035.jpg" alt="">
+        </main>
+
+        <div class="quien_soy">
+            <img src="1719186295958.jpg" alt="">
+            <div class="quien_soy-info">
+                <h1 id="sobre_mi">Sobre mi</h1>
+                <div class="divisor"></div>
+                <p>Soy Dayanna Sánchez, estudiante de Campuslands. Me destaco en proyectos tecnológicos y soy conocida por lograr los mejores resultados. Soy una persona orientada a objetivos que siempre busca mejorar y aprender cosas nuevas. Disfruto trabajando en equipo y ofreciendo ayuda cuando es necesario. Estoy preparada para asumir nuevos retos y ayudar a cualquier empresa a alcanzar el éxito.</p>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="proyecto-info">
+                <h1 id="Portafolio"> PORTAFOLIO</h1>
+
+                <div class="proyecto-python">
+                    <h3>Proyecto Python</h3><br>
+                    <p>Este proyecto consistió en hacer una pagina de Campuslands.</p><br><br>
+                    <a href="https://github.com/miDaya02/PROGRAMA_CAMPERSS-20240605T110828Z-001">
+                        <img src="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1603718736/Why_Your_Company_Needs_Python_for_Business_Analytics_xzzles.png" alt="Proyecto Python"><br><br>
+                    </a>
+                </div>
+
+                <div class="proyecto-html">
+                    <h3>Proyecto Portafolio</h3><br>
+                    <p>Este proyecto se basó en hacer un portafolio (hoja de vida)</p><br><br>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/diegoAlex24/HTML-CSS-examples/master/html-css-logo.jpg" alt="Proyecto HTML y CSS">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto">
+            <h2 id="Contacto">Contacto</h2>
+            <form action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje aquí" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
